@@ -1245,6 +1245,11 @@ section,
 .portfolio-content {
     height: 320px;
 }
+.portfolio-content img {
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+}
 .service-details ul li {
   padding: 5px 0;
   display: flex;
