@@ -1245,7 +1245,7 @@ section,
 .portfolio-content {
     height: 320px;
 }
-.portfolio-content img {
+.portfolio-content img.img-fluid {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover;
