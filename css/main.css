@@ -718,6 +718,94 @@ section,
   margin-bottom: 20px;
 }
 
+.resume-sec-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.resume-sec-title a{
+  padding: 10px 20px;
+  background-color: #149ddd;
+  color: #fff;
+}
+.resume-sec-title a:hover{
+  background-color: #000000;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+
+/* 5 */
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background-color: #149ddd;
+  align-items: center;
+    display: flex;
+    white-space: nowrap;
+ 
+}
+.btn-5:hover {
+  color: #ffffff;
+  background-color: #000000;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #149ddd;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+/* and same the */
+
+
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
@@ -769,6 +857,29 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+
+.portfolio-content {
+  background: #ffff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.portfolio-content img {
+  width: 100%;
+  padding: 10px;
+  
+}
+.isotope-layout ul.portfolio-filters.isotope-filters.aos-init.aos-animate {
+  width: 40%;
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+ul.portfolio-filters.isotope-filters.aos-init.aos-animate li {
+  margin-bottom: 0px;
+}
+
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -882,10 +993,51 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+
+
+.services-sec{
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
 .services .service-item {
   position: relative;
 }
 
+.services-sec .icon-img img{
+  width: 75px;
+  background-color: #ffff;
+  border-radius: 50px;
+  padding: 15px;
+}
+
+.btton-botam {
+  text-align: center;
+  margin-top: 40px;
+}
+.btton-botam a{
+  background-color: #344c36;
+  color: #ffff;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.services-sec .but a{
+  color: #344c36;
+  text-decoration: underline;
+}
+.services-sec .but a:hover{
+  color: rgb(241, 12, 12);
+}
+.services-sec .service-sec-title {
+  margin-top: 25px;
+}
+.service-sec-title h2{
+  font-size: 25px;
+  font-weight: 600;
+}
 .services .service-item .icon {
   background: var(--accent-color);
   display: flex;
@@ -1047,6 +1199,10 @@ section,
 .contact .info-item {
   margin-bottom: 40px;
 }
+.isotope-layout ul.portfolio-filters.isotope-filters.aos-init.aos-animate{
+  overflow: auto;
+  width: 100%;
+}
 
 .contact .info-item i {
   font-size: 20px;
@@ -1092,6 +1248,11 @@ section,
     padding: 20px;
   }
 }
+@media (max-width: 1300px){
+  .isotope-layout ul.portfolio-filters.isotope-filters.aos-init.aos-animate{
+    width: 40% !important;
+  }
+} 
 
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
@@ -1141,6 +1302,7 @@ section,
   margin-top: 20px;
   position: relative;
 }
+
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -1242,14 +1404,7 @@ section,
   padding: 0;
   font-size: 15px;
 }
-.portfolio-content {
-    height: 250px;
-}
-.portfolio-content img.img-fluid {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover;
-}
+
 .service-details ul li {
   padding: 5px 0;
   display: flex;
